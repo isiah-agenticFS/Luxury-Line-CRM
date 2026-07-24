@@ -4,6 +4,7 @@
 name: Build and deploy ASP.NET Framework app to Azure Web App
 
 env:
+  # Set repository variable AZURE_WEBAPP_NAME to your Azure App Service name.
   AZURE_WEBAPP_NAME: ${{ vars.AZURE_WEBAPP_NAME }}
   PROJECT_FILE: ScrubCRM.csproj
   PACKAGE_PATH: ${{ github.workspace }}/artifacts/WebApp.zip
