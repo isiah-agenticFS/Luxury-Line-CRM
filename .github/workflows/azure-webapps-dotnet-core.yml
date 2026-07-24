@@ -6,7 +6,7 @@ name: Build and deploy ASP.NET Framework app to Azure Web App
 env:
   AZURE_WEBAPP_NAME: ${{ vars.AZURE_WEBAPP_NAME }}
   PROJECT_FILE: ScrubCRM.csproj
-  PACKAGE_PATH: ${{ github.workspace }}\artifacts\WebApp.zip
+  PACKAGE_PATH: ${{ github.workspace }}/artifacts/WebApp.zip
 
 on:
   push:
