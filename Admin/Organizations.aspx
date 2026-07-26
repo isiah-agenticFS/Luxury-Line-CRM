@@ -1,7 +1,7 @@
 <%@ Page Title="Organizations" Language="C#" MasterPageFile="~/Admin/Site.Master" AutoEventWireup="true" CodeBehind="Organizations.aspx.cs" Inherits="ScrubCRM.Admin.Organizations" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1 class="h3 mb-4">Wholesale Clients &amp; Universities</h1>
+    <h1 class="h3 mb-4"><i class="bi bi-building me-2"></i>Wholesale Clients &amp; Universities</h1>
 
     <asp:Label ID="lblMessage" runat="server" CssClass="alert alert-success d-block" Visible="false" />
 

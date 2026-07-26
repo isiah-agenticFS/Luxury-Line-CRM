@@ -1,7 +1,7 @@
 <%@ Page Title="Inventory" Language="C#" MasterPageFile="~/Admin/Site.Master" AutoEventWireup="true" CodeBehind="Inventory.aspx.cs" Inherits="ScrubCRM.Admin.Inventory" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1 class="h3 mb-4">Inventory</h1>
+    <h1 class="h3 mb-4"><i class="bi bi-layers me-2"></i>Inventory</h1>
 
     <asp:Label ID="lblMessage" runat="server" CssClass="alert alert-success d-block" Visible="false" />
     <asp:Label ID="lblError" runat="server" CssClass="alert alert-danger d-block" Visible="false" />

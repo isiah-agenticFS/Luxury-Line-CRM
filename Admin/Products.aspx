@@ -2,8 +2,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="d-flex justify-content-between align-items-center mb-3">
-        <h1 class="h3 mb-0">Products</h1>
-        <asp:HyperLink ID="lnkAddProduct" runat="server" NavigateUrl="~/Admin/ProductEdit.aspx" CssClass="btn btn-primary">Add Product</asp:HyperLink>
+        <h1 class="h3 mb-0"><i class="bi bi-box-seam me-2"></i>Products</h1>
+        <asp:HyperLink ID="lnkAddProduct" runat="server" NavigateUrl="~/Admin/ProductEdit.aspx" CssClass="btn btn-primary"><i class="bi bi-plus-lg me-1"></i>Add Product</asp:HyperLink>
     </div>
 
     <asp:Label ID="lblMessage" runat="server" CssClass="alert alert-success d-block" Visible="false" />

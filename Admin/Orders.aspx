@@ -2,8 +2,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="d-flex justify-content-between align-items-center mb-3">
-        <h1 class="h3 mb-0">Order Requests</h1>
-        <asp:HyperLink ID="lnkAddOrder" runat="server" NavigateUrl="~/Admin/OrderEdit.aspx" CssClass="btn btn-primary">New Order Request</asp:HyperLink>
+        <h1 class="h3 mb-0"><i class="bi bi-receipt me-2"></i>Order Requests</h1>
+        <asp:HyperLink ID="lnkAddOrder" runat="server" NavigateUrl="~/Admin/OrderEdit.aspx" CssClass="btn btn-primary"><i class="bi bi-plus-lg me-1"></i>New Order Request</asp:HyperLink>
     </div>
 
     <div class="card mb-3">

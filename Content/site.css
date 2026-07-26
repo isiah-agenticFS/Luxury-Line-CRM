@@ -1,0 +1,322 @@
+/* ===== Luxury Line CRM — Pink & White Theme ===== */
+
+/* ---------- Google Font (loaded via Site.Master) ---------- */
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+/* ---------- Page background ---------- */
+body {
+    background: linear-gradient(150deg, #fce4ec 0%, #fff0f7 55%, #ffd6ea 100%);
+    min-height: 100vh;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    background: linear-gradient(90deg, #880e4f 0%, #d63384 100%) !important;
+    box-shadow: 0 3px 14px rgba(214, 51, 132, 0.35);
+    padding: 0.7rem 1.25rem;
+}
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: 0.4px;
+    color: #fff !important;
+}
+.navbar-brand .brand-icon {
+    margin-right: 6px;
+    opacity: 0.9;
+}
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.45rem 0.9rem !important;
+    border-radius: 7px;
+    transition: background 0.18s, color 0.18s;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.22);
+}
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255%2C255%2C255%2C0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-text {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 0.875rem;
+}
+.btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.65);
+    color: #fff;
+    transition: all 0.18s;
+}
+.btn-outline-light:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #fff;
+    color: #fff;
+}
+
+/* ---------- Page headings ---------- */
+h1.h3, .h3 {
+    color: #880e4f;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+/* ---------- Cards ---------- */
+.card {
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(214, 51, 132, 0.09);
+    transition: box-shadow 0.2s, transform 0.2s;
+    background: #fff;
+}
+.card:hover {
+    box-shadow: 0 6px 22px rgba(214, 51, 132, 0.16);
+}
+.card-header {
+    background: linear-gradient(90deg, #fce4ec 0%, #ffd6ea 100%);
+    border-bottom: 1px solid rgba(214, 51, 132, 0.18);
+    border-radius: 14px 14px 0 0 !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #880e4f;
+    padding: 0.85rem 1.25rem;
+    letter-spacing: 0.2px;
+}
+
+/* ---------- Stat cards (Dashboard) ---------- */
+.stat-card {
+    border-left: 4px solid #d63384 !important;
+    border-radius: 14px !important;
+    cursor: default;
+}
+.stat-card .card-body {
+    padding: 1.1rem 1.25rem;
+}
+.stat-card .stat-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #9e9e9e;
+    margin-bottom: 4px;
+}
+.stat-card .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #880e4f;
+    line-height: 1.1;
+}
+.stat-card .stat-icon {
+    font-size: 1.6rem;
+    color: rgba(214, 51, 132, 0.2);
+    float: right;
+    margin-top: 2px;
+}
+.stat-card.stat-warning .stat-value { color: #e65100; }
+.stat-card.stat-danger  .stat-value { color: #b71c1c; }
+
+/* ---------- Tables ---------- */
+.table thead th {
+    background: linear-gradient(90deg, #fce4ec 0%, #ffd6ea 100%);
+    color: #880e4f;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    border-bottom: 2px solid rgba(214, 51, 132, 0.2);
+    padding: 0.85rem 1rem;
+    white-space: nowrap;
+}
+.table td {
+    vertical-align: middle;
+    padding: 0.8rem 1rem;
+    border-color: rgba(214, 51, 132, 0.07);
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: rgba(252, 228, 236, 0.18);
+    --bs-table-accent-bg: rgba(252, 228, 236, 0.18);
+}
+.table tbody tr {
+    transition: background 0.13s;
+}
+.table tbody tr:hover > * {
+    background-color: rgba(214, 51, 132, 0.07) !important;
+    --bs-table-accent-bg: rgba(214, 51, 132, 0.07);
+}
+
+/* ---------- Badges ---------- */
+.badge {
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    padding: 0.4em 0.75em;
+    border-radius: 20px;
+}
+.badge.bg-primary { background-color: #d63384 !important; }
+
+/* ---------- Buttons ---------- */
+.btn {
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.18s;
+    font-size: 0.875rem;
+}
+.btn-primary {
+    background: linear-gradient(135deg, #d63384 0%, #ad1766 100%);
+    border: none;
+    box-shadow: 0 2px 8px rgba(214, 51, 132, 0.28);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    background: linear-gradient(135deg, #c0176e 0%, #9d1053 100%);
+    border: none;
+    box-shadow: 0 4px 14px rgba(214, 51, 132, 0.4);
+    transform: translateY(-1px);
+}
+.btn-primary:active { transform: translateY(0); box-shadow: none; }
+.btn-outline-primary {
+    border-color: #d63384;
+    color: #d63384;
+}
+.btn-outline-primary:hover {
+    background: #d63384;
+    border-color: #d63384;
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(214, 51, 132, 0.3);
+}
+.btn-outline-secondary {
+    border-color: #ccc;
+    color: #555;
+}
+.btn-outline-secondary:hover {
+    background: #f5f5f5;
+    border-color: #bbb;
+    color: #333;
+    transform: translateY(-1px);
+}
+.btn-outline-danger {
+    transition: all 0.18s;
+}
+.btn-outline-danger:hover { transform: translateY(-1px); }
+.btn-secondary {
+    background: #e91e8c;
+    border: none;
+    transition: all 0.18s;
+}
+.btn-secondary:hover {
+    background: #c0176e;
+    transform: translateY(-1px);
+}
+
+/* ---------- Form controls ---------- */
+.form-control,
+.form-select {
+    border-color: rgba(214, 51, 132, 0.25);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: border-color 0.18s, box-shadow 0.18s;
+}
+.form-control:focus,
+.form-select:focus {
+    border-color: #d63384;
+    box-shadow: 0 0 0 0.22rem rgba(214, 51, 132, 0.18);
+}
+.form-label {
+    font-weight: 500;
+    font-size: 0.825rem;
+    color: #555;
+    margin-bottom: 0.3rem;
+}
+.form-check-input:checked {
+    background-color: #d63384;
+    border-color: #d63384;
+}
+.form-control-sm, .form-select-sm {
+    border-radius: 6px;
+}
+
+/* ---------- Alerts ---------- */
+.alert {
+    border-radius: 10px;
+    font-size: 0.875rem;
+}
+.alert-success {
+    background: #f0faf5;
+    border-color: #a8d5ba;
+    color: #1a5c38;
+}
+.alert-danger {
+    background: #fff5f7;
+    border-color: #f5a7bc;
+    color: #9d1a3c;
+}
+
+/* ---------- Description list (Order Details) ---------- */
+dt {
+    font-weight: 600;
+    font-size: 0.825rem;
+    color: #880e4f;
+}
+dd {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* ---------- Login page ---------- */
+body.login-page {
+    background: linear-gradient(135deg, #880e4f 0%, #d63384 55%, #ff8dc7 100%);
+    min-height: 100vh;
+}
+body.login-page .card {
+    border-radius: 18px;
+    box-shadow: 0 12px 40px rgba(136, 14, 79, 0.35);
+}
+body.login-page .card-body { padding: 2rem 2.25rem; }
+body.login-page .brand-title {
+    color: #880e4f;
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+}
+body.login-page .brand-sub {
+    color: #9e9e9e;
+    font-size: 0.85rem;
+}
+body.login-page .brand-icon-lg {
+    font-size: 2.5rem;
+    color: #d63384;
+    display: block;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #fce4ec; }
+::-webkit-scrollbar-thumb { background: #d63384; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #880e4f; }
+
+/* ---------- Smooth link transitions ---------- */
+a { transition: color 0.15s; }
+
+/* ---------- Fade-in on load ---------- */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.container-fluid {
+    animation: fadeInUp 0.3s ease both;
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 576px) {
+    .stat-card .stat-value { font-size: 1.6rem; }
+    .stat-card .stat-icon  { display: none; }
+}
