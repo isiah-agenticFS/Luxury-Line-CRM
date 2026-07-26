@@ -40,12 +40,13 @@
         }
 
         /* ---- Auto-dismiss success alerts after 4 s ---- */
+        function fadeOutAlert(el) {
+            el.style.transition = 'opacity 0.5s';
+            el.style.opacity = '0';
+            el.addEventListener('transitionend', function () { el.style.display = 'none'; }, { once: true });
+        }
         document.querySelectorAll('.alert-success').forEach(function (el) {
-            setTimeout(function () {
-                el.style.transition = 'opacity 0.5s';
-                el.style.opacity = '0';
-                setTimeout(function () { el.style.display = 'none'; }, 500);
-            }, 4000);
+            setTimeout(fadeOutAlert, 4000, el);
         });
 
     });

@@ -100,7 +100,7 @@ h1.h3, .h3 {
     padding: 1.1rem 1.25rem;
 }
 .stat-card .stat-label {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.8px;
@@ -126,7 +126,7 @@ h1.h3, .h3 {
 .table thead th {
     background: linear-gradient(90deg, #fce4ec 0%, #ffd6ea 100%);
     color: #880e4f;
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.7px;
