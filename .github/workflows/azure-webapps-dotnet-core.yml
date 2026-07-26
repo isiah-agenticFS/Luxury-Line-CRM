@@ -43,7 +43,7 @@ jobs:
       - name: Cache NuGet packages
         uses: actions/cache@v3
         with:
-          path: ${{ github.workspace }}\packages
+          path: ${{ github.workspace }}/packages
           key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.config') }}
           restore-keys: |
             ${{ runner.os }}-nuget-
@@ -57,14 +57,14 @@ jobs:
             /p:Configuration=Release `
             /p:DeployOnBuild=true `
             /p:WebPublishMethod=FileSystem `
-            /p:publishUrl=${{ github.workspace }}\published `
+            /p:publishUrl=${{ github.workspace }}/published `
             /p:DeleteExistingFiles=true
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: asp-net-app
-          path: ${{ github.workspace }}\published
+          path: ${{ github.workspace }}/published
 
   deploy:
     permissions:
