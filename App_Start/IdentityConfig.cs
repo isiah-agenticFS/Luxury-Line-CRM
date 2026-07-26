@@ -65,7 +65,7 @@ namespace ScrubCRM
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
                 LoginPath = new PathString("/Login.aspx"),
-                CookieSecure = CookieSecureOption.SameAsRequest,
+                CookieSecure = CookieSecureOption.Always,
                 CookieHttpOnly = true,
                 ExpireTimeSpan = TimeSpan.FromHours(8),
                 SlidingExpiration = true
