@@ -153,6 +153,9 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="Web.config" />
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
     <Content Include="packages.config" />
 
     <Content Include="Admin\Site.Master">
